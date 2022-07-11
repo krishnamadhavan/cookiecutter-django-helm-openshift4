@@ -19,9 +19,9 @@ setup(
         "using Helm Charts."
     ),
     long_description=long_description,
-    author="Krishna Madhavan",
-    author_email="madhavank@who.int",
-    url="https://github.com/krishnamadhavan/cookiecutter-django-helm-openshift4",
+    author="Daniel Roy Greenfeld",
+    author_email="pydanny@gmail.com",
+    url="https://github.com/cookiecutter/cookiecutter-django",
     packages=[],
     license="BSD",
     zip_safe=False,
