@@ -72,6 +72,16 @@ if (
     sys.exit(1)
 
 if (
+    "{{ cookiecutter.use_docker }}".lower() == "n"
+    and "{{ cookiecutter.use_kubernetes }}".lower() == "y"
+):
+    print(
+        "You should use Docker in order to deploy your "
+        "application on a Kubernetes cluster."
+    )
+    sys.exit(1)
+
+if (
     "{{ cookiecutter.cloud_provider }}" == "GCP"
     and "{{ cookiecutter.mail_service }}" == "Amazon SES"
 ) or (

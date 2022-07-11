@@ -70,6 +70,10 @@ def remove_utility_files():
     shutil.rmtree("utility")
 
 
+def remove_helm_charts():
+    shutil.rmtree("chart")
+
+
 def remove_heroku_files():
     file_names = ["Procfile", "runtime.txt", "requirements.txt"]
     for file_name in file_names:
@@ -354,6 +358,9 @@ def main():
         remove_utility_files()
     else:
         remove_docker_files()
+
+    if "{{ cookiecutter.use_kubernetes }}".lower() == "n":
+        remove_helm_charts()
 
     if (
         "{{ cookiecutter.use_docker }}".lower() == "y"
