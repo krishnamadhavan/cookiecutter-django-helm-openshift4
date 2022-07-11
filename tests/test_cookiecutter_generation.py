@@ -45,8 +45,12 @@ SUPPORTED_COMBINATIONS = [
     {"windows": "n"},
     {"use_pycharm": "y"},
     {"use_pycharm": "n"},
-    {"use_docker": "y"},
-    {"use_docker": "n"},
+    {"use_docker": "y", "use_kubernetes": "y"},
+    {"use_docker": "y", "use_kubernetes": "n"},
+    {"use_docker": "n", "use_kubernetes": "n"},
+    # Note: use_docker=n AND use_kubernetes=y is not supported
+    {"use_kubernetes": "y"},
+    {"use_kubernetes": "n"},
     {"postgresql_version": "14"},
     {"postgresql_version": "13"},
     {"postgresql_version": "12"},
@@ -114,6 +118,7 @@ UNSUPPORTED_COMBINATIONS = [
     {"cloud_provider": "None", "use_whitenoise": "n"},
     {"cloud_provider": "GCP", "mail_service": "Amazon SES"},
     {"cloud_provider": "None", "mail_service": "Amazon SES"},
+    {"use_docker": "n", "use_kubernetes": "y"}
 ]
 
 
