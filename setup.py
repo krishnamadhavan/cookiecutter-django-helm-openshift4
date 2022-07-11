@@ -15,12 +15,12 @@ setup(
     version=version,
     description=(
         "A Cookiecutter template for creating production-ready "
-        "Django projects quickly."
+        "Django projects quickly. Deployable to OpenShift 4 using Helm Charts."
     ),
     long_description=long_description,
-    author="Daniel Roy Greenfeld",
-    author_email="pydanny@gmail.com",
-    url="https://github.com/cookiecutter/cookiecutter-django",
+    author="Krishna Madhavan",
+    author_email="madhavank@who.int",
+    url="https://github.com/krishnamadhavan/cookiecutter-django-helm-openshift4",
     packages=[],
     license="BSD",
     zip_safe=False,
@@ -39,6 +39,7 @@ setup(
     ],
     keywords=(
         "cookiecutter, Python, projects, project templates, django, "
-        "skeleton, scaffolding, project directory, setup.py"
+        "skeleton, scaffolding, project directory, setup.py, "
+        "helm, kubernetes, openshift"
     ),
 )
