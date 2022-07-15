@@ -15,7 +15,7 @@ setup(
     version=version,
     description=(
         "A Cookiecutter template for creating production-ready "
-        "Django projects quickly. Deployable to OpenShift 4 "
+        "Django projects quickly. Deployable to Kubernetes "
         "using Helm Charts."
     ),
     long_description=long_description,
